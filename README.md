@@ -1,18 +1,15 @@
-# reasoning-with-chinese-history
+# My Skills
 
-通过《史记》《资治通鉴》的可核验案例，辅助分析现实抉择。技能说明位于 [SKILL.md](reasoning-with-chinese-history/SKILL.md)。
+个人 AI Agent 技能库。每个技能放在独立目录中，以 `SKILL.md` 为入口；脚本、参考资料和其他运行所需文件与入口放在同一目录。
 
-仓库包含简体转写语料、来源清单、脚本和参考文档。SQLite 检索索引与 JSONL 段落文件是生成物，不纳入 Git：SQLite 单文件超过 GitHub 的 100 MB 限制。
+## 技能目录
 
-## 安装与构建
+| 技能 | 用途 |
+| --- | --- |
+| [reasoning-with-chinese-history](reasoning-with-chinese-history/SKILL.md) | 用《史记》《资治通鉴》的可核验案例，辅助分析现实抉择。 |
 
-把 `reasoning-with-chinese-history` 目录复制到 Codex 或 Claude 的 skills 目录，或将两个 skills 目录分别链接到该目录。在技能根目录运行：
+## 使用
 
-```bash
-python3 scripts/build_index.py --text-root corpus/text --output-dir corpus/index
-python3 scripts/search_corpus.py '韩信' --limit 1 --context 0 --json
-```
+将需要的技能目录放入所用 Agent 的 `skills` 目录，或按该 Agent 的技能安装方式添加。阅读对应的 `SKILL.md`，完成其中要求的运行准备。技能目录中的脚本若使用相对路径，请从该技能目录执行。
 
-脚本使用 Python 标准库，索引构建依赖 Python 所附 SQLite 的 FTS5。首次使用前须生成 `corpus/index/search.sqlite3`；目录必须可写，构建时需要足够的临时磁盘空间。
-
-语料固定来源、转换与许可限定见 [来源政策](reasoning-with-chinese-history/references/source-policy.md)及 [manifest.json](reasoning-with-chinese-history/corpus/manifest.json)。
+`reasoning-with-chinese-history` 随附简体转写语料及来源清单。检索索引是生成物，未纳入 Git；首次使用前按其 `SKILL.md` 中的命令构建索引。
