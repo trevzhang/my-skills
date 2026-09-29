@@ -1,0 +1,11 @@
+# Simplified fixture converted from kanripo/KR2b0007 for parser tests only.
+#+TITLE: 资治通鉴
+#+PROPERTY: ID KR2b0007
+#+PROPERTY: BASEEDITION SBCK
+#+PROPERTY: JUAN 卷一
+<pb:KR2b0007_WYG_001-2a>¶
+威烈王二十三年，初命晋大夫魏斯、赵籍、韩䖍为诸侯。¶
+
+臣光曰：臣闻天子之职莫大于礼，礼莫大于分，分莫大于名。¶
+
+(胡三省注：此为测试所用注文。)¶

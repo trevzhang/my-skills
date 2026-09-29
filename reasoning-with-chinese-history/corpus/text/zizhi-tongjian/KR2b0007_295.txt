@@ -1,0 +1,7 @@
+# -*- mode: mandoku-view; -*-
+#+TITLE: 资治通鉴
+#+DATE: 2015-08-24 22:23:34.771638
+#+PROPERTY: ID KR2b0007
+#+PROPERTY: BASEEDITION SBCK
+#+PROPERTY: JUAN 卷二百九十5
+

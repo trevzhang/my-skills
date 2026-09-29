@@ -1,0 +1,7 @@
+interface:
+  display_name: "史鉴人生抉择推演"
+  short_description: "用《史记》《资治通鉴》中的可核验案例推演现实抉择"
+  default_prompt: "Use $reasoning-with-chinese-history to structure my dilemma, retrieve verifiable historical cases, and identify costs, differences, and risk controls."
+
+policy:
+  allow_implicit_invocation: true
